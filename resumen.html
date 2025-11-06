@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen - ColabU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resumen.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>ColabU</h1>
+                </div>
+                <nav class="main-nav">
+                    <a href="resumen.html" class="nav-link active">Resumen</a>
+                    <a href="grupos.html" class="nav-link">Grupos</a>
+                    <a href="tareas.html" class="nav-link">Tareas</a>
+                    <a href="calendario.html" class="nav-link">Calendario</a>
+                    <a href="chat.html" class="nav-link">Chat</a>
+                    
+                </nav>
+                               <!-- En el header, actualizar la sección del usuario -->
+<div class="user-menu">
+    <span class="user-name" id="userName">Usuario</span>
+    <div class="user-avatar" id="userAvatar">US</div>
+    <a href="index.html" class="logout-btn">Cerrar Sesión</a>
+</div>
+
+        </header>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>Resumen General</h2>
+                <p>Vista completa de tu progreso y actividades</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Estadísticas Rápidas -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-info">
+                            <h3>5</h3>
+                            <p>Grupos Activos</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-info">
+                            <h3>12</h3>
+                            <p>Tareas Completadas</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏰</div>
+                        <div class="stat-info">
+                            <h3>3</h3>
+                            <p>Pendientes Urgentes</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3>8</h3>
+                            <p>Colaboradores</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progreso de Grupos -->
+                <div class="section-card">
+                    <h3>Progreso de Grupos</h3>
+                    <div class="progress-list">
+                        <div class="progress-item">
+                            <div class="project-info">
+                                <h4>Equipo Alpha</h4>
+                                <span>Sistema de Gestión Biblioteca</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span class="progress-text">75%</span>
+                        </div>
+                        <div class="progress-item">
+                            <div class="project-info">
+                                <h4>Equipo Beta</h4>
+                                <span>App de Movilidad Urbana</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                            <span class="progress-text">60%</span>
+                        </div>
+                        <div class="progress-item">
+                            <div class="project-info">
+                                <h4>Planificación</h4>
+                                <span>Prototipo de API</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <span class="progress-text">30%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tareas Recientes -->
+                <div class="section-card">
+                    <h3>Tareas Recientes</h3>
+                    <div class="recent-tasks">
+                        <div class="task-item completed">
+                            <div class="task-status"></div>
+                            <div class="task-content">
+                                <h4>Investigación de APIs</h4>
+                                <p>Equipo Beta - Completada</p>
+                            </div>
+                            <span class="task-date">Hoy</span>
+                        </div>
+                        <div class="task-item in-progress">
+                            <div class="task-status"></div>
+                            <div class="task-content">
+                                <h4>Diseño de base de datos</h4>
+                                <p>Equipo Alpha - En progreso</p>
+                            </div>
+                            <span class="task-date">2 días</span>
+                        </div>
+                        <div class="task-item pending">
+                            <div class="task-status"></div>
+                            <div class="task-content">
+                                <h4>Prototipo de interfaz</h4>
+                                <p>Equipo Alpha - Pendiente</p>
+                            </div>
+                            <span class="task-date">5 días</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Próximos Eventos -->
+                <div class="section-card">
+                    <h3>Próximos Eventos</h3>
+                    <div class="upcoming-events">
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">SEP</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Entrega: Planificación</h4>
+                                <p>Prototipo de API</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">29</span>
+                                <span class="month">NOV</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Entrega: App Movilidad</h4>
+                                <p>Equipo Beta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actividad Reciente -->
+                <div class="section-card">
+                    <h3>Actividad Reciente</h3>
+                    <div class="activity-feed">
+                        <div class="activity-item">
+                            <div class="activity-avatar">AG</div>
+                            <div class="activity-content">
+                                <p><strong>Ana García</strong> completó una tarea en <strong>Equipo Beta</strong></p>
+                                <span>Hace 2 horas</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">CL</div>
+                            <div class="activity-content">
+                                <p><strong>Carlos López</strong> comentó en <strong>Equipo Alpha</strong></p>
+                                <span>Hace 5 horas</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-avatar">MR</div>
+                            <div class="activity-content">
+                                <p><strong>María Rodríguez</strong> subió un archivo en <strong>Equipo Alpha</strong></p>
+                                <span>Ayer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+  
+<!-- Al final del body, ANTES de los otros scripts -->
+<script src="user-manager.js"></script>
+    <script src="resumen.js"></script>
+</body>
+</html>
